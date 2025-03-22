@@ -1,0 +1,419 @@
+/* Definição de variáveis globais */
+:root {
+  --fonte-principal: "Montserrat", sans-serif; /* Fonte principal */
+  --primaria: #eb1ccc; /* Cor primária */
+  --secundaria: #95989a; /* Cor secundária */
+  --cor-texto: #fff; /* Cor do texto principal */
+  --cor-texto-secundario: #000; /* Cor do texto secundário */
+  --cor-texto-terciario: #5d5d5d; /* Cor do texto terciário */
+}
+
+/* Reset básico para todos os elementos */
+* {
+  font-family: var(--fonte-principal); /* Define a fonte principal */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho do elemento */
+}
+
+/* Estilos para a seção de descrição do evento */
+#descricao-evento {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-5.jpg"); /* Fundo com gradiente e imagem */
+  background-position: center;
+  background-size: cover;
+  height: 90vh; /* Altura de 90% da viewport */
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre os elementos */
+  align-items: center; /* Centraliza verticalmente */
+  color: var(--cor-texto); /* Cor do texto */
+}
+
+/* Estilos para o aviso (informações do evento) */
+#aviso h2,
+#aviso .data-evento {
+  color: var(--primaria); /* Cor primária para título e data */
+}
+
+#aviso h2 {
+  font-size: 3em; /* Tamanho da fonte */
+  margin-bottom: 1em; /* Margem inferior */
+}
+
+#aviso .sobre-evento {
+  font-size: 2em;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  max-width: 350px; /* Largura máxima */
+  font-weight: bold; /* Negrito */
+  margin-bottom: 1em;
+}
+
+#aviso p {
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+#aviso .data-evento {
+  font-weight: bold; /* Negrito para a data */
+}
+
+/* Estilos para o formulário de inscrição */
+#formulario-inscricao {
+  background-color: var(--secundaria); /* Cor de fundo */
+  padding: 2em; /* Espaçamento interno */
+  max-width: 22%; /* Largura máxima */
+}
+
+#formulario-inscricao p {
+  font-size: 1.5em;
+  color: var(--cor-texto-secundario); /* Cor do texto */
+  margin-bottom: 1em;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  margin-bottom: 0.8em;
+}
+
+.grupo-formulario label {
+  color: var(--cor-texto-terciario); /* Cor do texto */
+  margin-bottom: 0.3em;
+  font-weight: bold; /* Negrito */
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+  padding: 6px 8px;
+  border-radius: 5px; /* Bordas arredondadas */
+  border: none;
+  outline: none; /* Remove a borda ao focar */
+}
+
+.botao {
+  background-color: var(--primaria); /* Cor de fundo */
+  color: var(--cor-texto); /* Cor do texto */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  width: 100%; /* Largura total */
+  border: none;
+  padding: 12px;
+  cursor: pointer; /* Cursor de ponteiro */
+  opacity: 0.8; /* Opacidade */
+}
+
+.botao:hover {
+  opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+/* Estilos para a seção de benefícios */
+#beneficios-chave h2 {
+  background-color: var(--secundaria); /* Cor de fundo */
+  text-align: center; /* Centraliza o texto */
+  padding: 2em;
+  font-weight: 500; /* Peso da fonte */
+}
+
+.beneficios {
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre os elementos */
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.beneficio {
+  text-align: center; /* Centraliza o texto */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  max-width: 20%; /* Largura máxima */
+  color: var(--cor-texto-terciario); /* Cor do texto */
+}
+
+.beneficio .imagem-beneficio {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+  background-size: cover; /* Ajusta a imagem ao tamanho do contêiner */
+  background-position: center; /* Centraliza a imagem */
+  margin-bottom: 1em;
+}
+
+#beneficio-1 {
+  background-image: url("../img/sqr-1.jpg"); /* Imagem de fundo */
+}
+
+#beneficio-2 {
+  background-image: url("../img/sqr-2.jpg");
+}
+
+#beneficio-3 {
+  background-image: url("../img/sqr-3.jpg");
+}
+
+/* Estilos para a seção de localização */
+#localizacao {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-1.jpg"); /* Fundo com gradiente e imagem */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre os elementos */
+  align-items: center; /* Centraliza verticalmente */
+  height: 400px; /* Altura fixa */
+  color: var(--cor-texto); /* Cor do texto */
+  margin-bottom: 3em; /* Margem inferior */
+}
+
+#endereco,
+#sobre-localizacao {
+  max-width: 30%; /* Largura máxima */
+}
+
+#endereco {
+  display: flex;
+}
+
+#endereco i {
+  color: var(--primaria); /* Cor primária para o ícone */
+  font-size: 4em; /* Tamanho do ícone */
+  margin-right: 0.5em; /* Margem à direita */
+}
+
+#detalhes-endereco {
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.3em;
+}
+
+#sobre-localizacao h3 {
+  color: var(--primaria); /* Cor primária */
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+#sobre-localizacao p {
+  line-height: 1.5em; /* Altura da linha */
+}
+
+/* Estilos para a seção de detalhes do evento */
+#detalhes {
+  width: 80%; /* Largura */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.detalhe {
+  display: flex;
+  align-items: flex-start; /* Alinha os elementos no topo */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  gap: 5%; /* Espaçamento entre colunas */
+  margin-bottom: 4em; /* Margem inferior */
+}
+
+.detalhe img {
+  width: 50%; /* Largura da imagem */
+}
+
+.detalhe h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500; /* Peso da fonte */
+}
+
+#detalhe-1 h3 {
+  font-size: 3em;
+  font-weight: 700; /* Peso da fonte */
+}
+
+.descricao-detalhe {
+  width: 100%;
+  padding-left: 2em; /* Espaçamento à esquerda */
+}
+
+.descricao-detalhe ul {
+  list-style-position: inside; /* Posiciona os marcadores dentro da lista */
+}
+
+.descricao-detalhe ul li {
+  margin-bottom: 0.4em; /* Margem inferior */
+}
+
+.descricao-detalhe ul li:last-child {
+  font-weight: bold; /* Negrito para o último item */
+}
+
+/* Estilos para a seção de chamada para ação (CTA) */
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/hrz-6.jpg"); /* Fundo com gradiente e imagem */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 300px; /* Altura fixa */
+  color: var(--cor-texto); /* Cor do texto */
+}
+
+#cta h3 {
+  font-weight: 500; /* Peso da fonte */
+  font-size: 2em;
+  margin-bottom: 1.2em;
+}
+
+#cta .botao {
+  width: 30%; /* Largura */
+  font-weight: 600; /* Peso da fonte */
+  font-size: 1.2em;
+}
+
+/* Estilos para o rodapé */
+#rodape {
+  text-align: center; /* Centraliza o texto */
+  color: var(--secundaria); /* Cor do texto */
+  height: 250px; /* Altura fixa */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+}
+
+#rodape h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+#rodape p:nth-child(2) {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+#rodape span {
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .botao {
+    opacity: 1; /* Opacidade total */
+  }
+
+  /* Ajustes para a seção de descrição do evento */
+  #descricao-evento {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    height: auto; /* Altura automática */
+  }
+
+  #aviso {
+    padding: 2em; /* Espaçamento interno */
+  }
+
+  #aviso h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #formulario-inscricao {
+    max-width: 70%; /* Largura máxima */
+    margin-bottom: 2em; /* Margem inferior */
+  }
+
+  /* Ajustes para a seção de benefícios */
+  .beneficios {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    width: auto; /* Largura automática */
+    padding: 2em; /* Espaçamento interno */
+  }
+
+  .beneficio {
+    max-width: 100%; /* Largura máxima */
+    margin-bottom: 2em; /* Margem inferior */
+  }
+
+  /* Ajustes para a seção de localização */
+  #localizacao {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    height: auto; /* Altura automática */
+    text-align: center; /* Centraliza o texto */
+    padding: 2em 0; /* Espaçamento interno */
+  }
+
+  #endereco {
+    order: 2; /* Ordem de exibição */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    max-width: 100%; /* Largura máxima */
+  }
+
+  #endereco i {
+    margin: 0.3em 0; /* Margem */
+  }
+
+  #sobre-localizacao {
+    order: 1; /* Ordem de exibição */
+    max-width: 100%; /* Largura máxima */
+  }
+
+  #sobre-localizacao h3 {
+    margin-bottom: 0;
+  }
+
+  #sobre-localizacao p {
+    display: none; /* Oculta o parágrafo */
+  }
+
+  /* Ajustes para a seção de detalhes */
+  .detalhe {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    margin-bottom: 0.5em; /* Margem inferior */
+    gap: 0; /* Espaçamento entre colunas */
+  }
+
+  .detalhe img {
+    width: 100%; /* Largura total */
+    margin: 2em 0; /* Margem */
+  }
+
+  #detalhe-1 img {
+    display: none; /* Oculta a imagem */
+  }
+
+  .descricao-detalhe {
+    padding: 0; /* Remove o espaçamento */
+  }
+
+  #detalhe-3 img {
+    order: 2; /* Ordem de exibição */
+  }
+
+  #detalhe-3 .descricao-detalhe {
+    order: 1; /* Ordem de exibição */
+  }
+
+  /* Ajustes para a seção de CTA */
+  #cta {
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #cta .botao {
+    width: 80%; /* Largura */
+  }
+}
+
+/* Estilos para botões com a classe .botao */
+a.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  font-size: 16px;
+  cursor: pointer; /* Cursor de ponteiro */
+  border: none;
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+a.botao:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
