@@ -91,14 +91,15 @@
 }
 
 .botao {
-  background-color: var(--primaria); /* Cor de fundo */
-  color: var(--cor-texto); /* Cor do texto */
+  background-color: #800080 !important;
+  color: var(--cor-texto);  /* Cor do texto */
   text-transform: uppercase; /* Transforma o texto em maiúsculas */
   width: 100%; /* Largura total */
   border: none;
   padding: 12px;
-  cursor: pointer; /* Cursor de ponteiro */
-  opacity: 0.8; /* Opacidade */
+  cursor: pointer;
+  opacity: 1; /* Opacidade */
+  transition: background-color 0.3s;
 }
 
 .botao:hover {
